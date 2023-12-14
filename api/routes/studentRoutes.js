@@ -16,13 +16,6 @@ router.route("/student").get(listOfStudents).post(createStudent);
  *     tags: [Students]
  *     summary: Retrieve a list of students
  *     description: Retrieve a list of students. This endpoint can filter students based on the initial letter of their name.
- *     parameters:
- *       - in: query
- *         name: letter
- *         required: false
- *         description: Initial letter of the student's name for filtering.
- *         schema:
- *           type: string
  *     responses:
  *       200:
  *         description: A list of students.
